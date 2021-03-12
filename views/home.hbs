@@ -1,0 +1,26 @@
+<h1> Hello World from Handlebars</h1>
+{{#each result}}
+    <tr>
+        <td> {{this.id}}</td>
+    </tr>
+    <anotheraside class="post-container3">
+      <div class="post" data-Name="{{name}}" data-main="{{main}}" data-time="{{time}}" data-type="{{type}}" data-amount="{{amount}}">
+        <div class="post-contents3">
+            <div class="post-info-container3">
+              <div class="header-image-container">
+                <img src={{this.image}} alt="FFXIV logo">
+                  <div>
+                    <a href="#" class="post-title"></a> <span class="post-name">{{this.title}}</span>
+                    <div>
+                        <a href="#" class="post-title"></a> <span class="post-type">2.100.000 people watching currently</span>
+                        <div>
+                            <a href="#" class="post-title"></a> <span class="post-type">{{this.gname}}</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</anotheraside>
+{{/each}}

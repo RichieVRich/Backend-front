@@ -1,0 +1,19 @@
+{
+  "name": "frozium",
+  "version": "1.0.0",
+  "description": "A school project that test our ability to create a webstie with database support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichieVRich/Backend-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichieVRich/Backend-front/issues"
+  },
+  "homepage": "https://github.com/RichieVRich/Backend-front#readme"
+}

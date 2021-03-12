@@ -92,6 +92,7 @@ function doFilterUpdate() {
 //Reveal Post Modal
 var postButton = document.querySelector("#post-button");
 postButton.addEventListener("click",function(){
+    console.log('I heard you click on me');
   document.getElementById("post-modal1").classList.remove("hidden1");
   document.getElementById("modal-backdrop1").classList.remove("hidden1");
   var option = document.getElementsByName("post-type");
@@ -193,6 +194,7 @@ function parsePostElem(postElem) {
 
 var deleteButton = document.querySelector("#delete-button");
 postButton.addEventListener("click",function(){
+    console.log('I heard you click on me 2');
   document.getElementById("post-modal2").classList.remove("hidden2");
   document.getElementById("modal-backdrop2").classList.remove("hidden2");
   var option = document.getElementsByName("delete-type");
@@ -293,6 +295,7 @@ function doFilterUpdateInsert() {
 }
 
 function closemodal() {
+    console.log('I heard you in close modal');
     document.getElementById("filter-text").value = "";
     document.getElementById("filter-time").value = "";
     document.getElementById("filter-modal").classList.add("hidden");
@@ -305,6 +308,7 @@ function closemodal() {
 //Clear Hidden
 var postButton = document.querySelector("#filter-button");
 postButton.addEventListener("click",function(){
+    console.log('I heard you click on me 3');
 document.getElementById("filter-modal").classList.remove("hidden");
 document.getElementById("modal-backdrop").classList.remove("hidden");
 var option = document.getElementsByName("filter-type");
@@ -316,6 +320,7 @@ for (var i = 0; i < option.length; i++){
 
 //Reset Value
 function closemodal() {
+    console.log('I heard you in the second close modal');
 document.getElementById("filter-text").value = "";
 document.getElementById("filter-time").value = "";
 document.getElementById("filter-modal").classList.add("hidden");
@@ -325,8 +330,10 @@ document.getElementById("modal-backdrop").classList.add("hidden");
 //Close Modal
 var cancelButton = document.querySelector("#modal-cancel");
 cancelButton.addEventListener("click", closemodal);
+    console.log('I heard you click on me 4');
 
 window.addEventListener('DOMContentLoaded', function () {
+    console.log('I heard you 9');
 
   var postElems = document.getElementsByClassName('post');
   for (var i = 0; i < postElems.length; i++) {
@@ -336,20 +343,24 @@ window.addEventListener('DOMContentLoaded', function () {
   var postSomething = document.getElementById('post-button');
   if (postSomething) {
     postSomething.addEventListener('click', postSomething);
+    console.log('I heard you 8');
   }
 
   var modalAcceptButton = document.getElementById('modal-accept1');
   if (modalAcceptButton) {
     modalAcceptButton.addEventListener('click', handleModalAcceptClick);
+    console.log('I heard you 5');
   }
 
   var modalHideButtons = document.getElementsByClassName('modal-hide-button');
   for (var i = 0; i < modalHideButtons.length; i++) {
     modalHideButtons[i].addEventListener('click', hidePostSomethingModal);
+    console.log('I heard you 6');
   }
 
   var acceptButton = document.querySelector("#modal-accept");
   if (acceptButton) {
     acceptButton.addEventListener('click', doFilterUpdateInsert);
+    console.log('I heard you 7');
   }
 });

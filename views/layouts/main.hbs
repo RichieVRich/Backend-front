@@ -1,0 +1,29 @@
+<html lang = "en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Frozium</title>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.runtime.js" charset="utf-8" defer></script>
+    <!--script src="post.js" charset="utf-8" defer></script> -->
+    <script src="index.js" charset="utf-8" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+        var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+        console.log(template({ doesWhat: "rocks!"}));
+    </script>
+
+
+  </head>
+
+<body>
+       <div class= "container">
+       {{{body}}}
+       </div>
+
+
+</body>
+</html>
