@@ -1,0 +1,15 @@
+=== Added Functionaility ===
+---Server.js---
++ Created server.js with node
++ Database link established
++ Sql commands established
++ Added handlebars to server.js
+
+---index.html---
++ Updated index.html
++ Added handlebars to index.html
+
+---database---
++ Reformat of Database
++ New inserts to add to database
+
