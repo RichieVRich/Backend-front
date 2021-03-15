@@ -1,8 +1,7 @@
-
-
-
-
-
+/*
+ *  Basic Server with Handlebar
+ *  Don't mess with unless told where to add
+ */
 var express = require('express')
 var mysql = require('./dbcon.js');
 var bodyParser = require('body-parser');
@@ -19,6 +18,11 @@ app.set('view engine','handlebars');
 var port = 4048
 //app.set('port', process.argv[2]);
 app.set('mysql',mysql);
+/*
+ *  Add Pages here with JS as require
+ *  Page = shop.handlebars ( and located in views
+ *  JS located in ./ with server
+ */
 app.use('/shop', require('./shop.js'))
 app.use('/', express.static('public'));
 
