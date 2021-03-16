@@ -41,12 +41,11 @@ module.exports = function(){
     }
 
     function getVgFilter(req, res,mysql, context, complete){
-        var query = 'SELECT  vg.title, genre.gname, dname FROM `vg` inner join genre on vg.genre = genre.id inner join dtv on vg.id = dtv.vid inner join developer on dtv.did = developer.id where developer.id=?';
-        console.log( "gvf", req.params);
+        var query = 'SELECT  *  FROM `vg` inner join genre on vg.genre = genre.id inner join dtv on vg.id = dtv.vid inner join developer on dtv.did = developer.id where developer.id=?';
         var inserts = [req.params.dnamo]
 
         mysql.pool.query(query,inserts, function(err, results, fields){
-            if(error){
+            if(err){
                 res.end();
             }
             context.developer = results;
